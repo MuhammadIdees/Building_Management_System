@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout for the flat fragment -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <RelativeLayout
+        android:id="@+id/user_flat_status"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FF3D00"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/user_flat_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="64sp"
+            android:textColor="#FFFFFF"
+            android:padding="32dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/dues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp"/>
+        <View
+            android:id="@+id/centre_bar"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:layout_margin = "16dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/admin_flatno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="32dp"
+            android:textSize="64sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#3D5AFe"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Floor"
+            android:textStyle="bold"
+            android:textColor="#C5CAE9"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_weight="2"
+            android:layout_margin="8dp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Flat 1"
+            android:textStyle="bold"
+            android:textColor="#C5CAE9"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Flat 2"
+            android:textStyle="bold"
+            android:textColor="#C5CAE9"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Flat 3"
+            android:textStyle="bold"
+            android:textColor="#C5CAE9"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Flat 4"
+            android:textStyle="bold"
+            android:textColor="#C5CAE9"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <ListView
+            android:id="@+id/flat_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+        </ListView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_flat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:layout_margin="16dp"
+            android:scaleType="center"
+            app:fabSize="mini"
+            android:src="@drawable/ic_add_circle_black_48dp"/>
+
+    </RelativeLayout>
+</LinearLayout>

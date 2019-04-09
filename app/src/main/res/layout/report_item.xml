@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/report_item_union"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Union 1"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:padding="4dp"/>
+
+        <TextView
+            android:id="@+id/report_item_floor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="floor no. "
+            android:paddingBottom="4dp"
+            android:textSize="18sp"
+            android:paddingStart="4dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/color"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/report_item_rupees"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="3000"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="rs"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingEnd="8dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
